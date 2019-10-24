@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practica2310.FXMLDocumentController">
+   <children>
+      <HBox prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <VBox prefHeight="544.0" prefWidth="213.0">
+               <children>
+                  <ImageView fitHeight="294.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@descarga.png" />
+                     </image>
+                  </ImageView>
+                  <TextField prefHeight="94.0" prefWidth="213.0" text="Gestion">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" layoutX="10.0" layoutY="223.0" prefHeight="94.0" prefWidth="213.0" text="de">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="10.0" layoutY="317.0" prefHeight="94.0" prefWidth="213.0" text="Alumnos">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="600.0" prefWidth="490.0" style="-fx-background-color: #C6F2F7;">
+               <children>
+                  <HBox prefHeight="63.0" prefWidth="487.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="28.0" prefWidth="117.0" text="Código:">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="codigoAlumno" prefHeight="25.0" prefWidth="159.0">
+                           <HBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Region prefHeight="63.0" prefWidth="83.0" />
+                        <Button fx:id="eliminarAlumnos" layoutX="336.0" layoutY="10.0" mnemonicParsing="false" onAction="#eliminacionDatos" prefHeight="53.0" prefWidth="182.0" text="Eliminar Registro" textFill="#f20f0f">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="63.0" prefWidth="487.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="28.0" prefWidth="117.0" text="Nombre">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="nombreAlumno" prefHeight="25.0" prefWidth="159.0">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="73.0" prefHeight="63.0" prefWidth="487.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="28.0" prefWidth="117.0" text="Apellido">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="apellidosAlumno" prefHeight="25.0" prefWidth="159.0">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="136.0" prefHeight="63.0" prefWidth="487.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="28.0" prefWidth="117.0" text="DNI">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="dniAlumno" prefHeight="25.0" prefWidth="159.0">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="199.0" prefHeight="63.0" prefWidth="487.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="28.0" prefWidth="117.0" text="Dirección">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="direccionAlumno" prefHeight="25.0" prefWidth="334.0">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="262.0" prefHeight="63.0" prefWidth="487.0">
+                     <children>
+                        <Button fx:id="btnRellenar" mnemonicParsing="false" onAction="#rellenarDatos" prefHeight="53.0" prefWidth="173.0" text="Rellenar Datos" textFill="#f20f0f">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="insertarAlumnos" mnemonicParsing="false" onAction="#insercionDatos" prefHeight="53.0" prefWidth="173.0" text="Insertar Datos" textFill="#f20f0f">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="actualizarAlumnos" layoutX="183.0" layoutY="10.0" mnemonicParsing="false" onAction="#actualizacionDatos" prefHeight="53.0" prefWidth="173.0" text="Actualizar Datos" textFill="#f20f0f">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="40.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="425.0" prefHeight="63.0" prefWidth="487.0">
+                     <children>
+                        <Button fx:id="btnMostrar" mnemonicParsing="false" onAction="#seleccionarDatos" prefHeight="53.0" prefWidth="274.0" text="Mostrar Datos de los Alumnos" textFill="#f20f0f">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Region prefHeight="63.0" prefWidth="42.0" />
+                        <Button fx:id="btnVaciarCajas" layoutX="183.0" layoutY="10.0" mnemonicParsing="false" onAction="#vaciarCajas" prefHeight="53.0" prefWidth="173.0" text="Limpiar Cajas" textFill="#f20f0f">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <TableView fx:id="dataGridView1" layoutY="600.0" prefHeight="198.0" prefWidth="704.0" />
+   </children>
+</AnchorPane>
