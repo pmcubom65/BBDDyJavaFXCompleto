@@ -43,6 +43,10 @@ import java.sql.SQLException;
 import java.util.Optional;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonType;
@@ -54,9 +58,14 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javax.swing.JOptionPane;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 public class FXMLDocumentController implements Initializable {
 
+    
+ 
+    
+    
     @FXML
     private TextField codigoAlumno;
     @FXML
@@ -83,6 +92,42 @@ public class FXMLDocumentController implements Initializable {
     private Button eliminarAlumnos;
     @FXML
     private Button btnVaciarCajas;
+
+    @FXML
+    private Button detalle;
+
+    @FXML
+    void irVentanaDetalle(ActionEvent event) {
+
+        if (dataGridView1.getSelectionModel().getSelectedItem() != null) {
+
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("VentanaDeDetalles.fxml"));
+            Parent nuevoparent = null;
+            try {
+                nuevoparent = loader.load();
+            } catch (Exception e) {
+
+            }
+            Scene nuevaescena = new Scene(nuevoparent, 700, 800);
+
+            VentanaDeDetallesController micontrolador = loader.getController();
+
+            CAlumnos c = dataGridView1.getSelectionModel().getSelectedItem();
+
+            micontrolador.iniciarVentana(c);
+
+            Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+            window.setScene(nuevaescena);
+
+            window.show();
+
+        } else {
+            JOptionPane.showMessageDialog(null, "Seleccionar un registro de la Tabla.", "Información", JOptionPane.INFORMATION_MESSAGE);
+        }
+
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -321,5 +366,9 @@ public class FXMLDocumentController implements Initializable {
             JOptionPane.showMessageDialog(null, ex, "Error de SQL.", JOptionPane.ERROR_MESSAGE);
         }
     }
+    
+    
+    
+    
 
 }
