@@ -15,7 +15,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practica2310.VentanaDeDetallesController">
    <children>
-      <HBox prefHeight="600.0" prefWidth="700.0">
+      <HBox prefHeight="600.0" prefWidth="700.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <VBox prefHeight="544.0" prefWidth="213.0">
                <children>
@@ -29,7 +29,7 @@
                         <Insets right="10.0" />
                      </padding>
                      <font>
-                        <Font name="System Bold Italic" size="14.0" />
+                        <Font name="System Bold Italic" size="18.0" />
                      </font>
                      <VBox.margin>
                         <Insets bottom="10.0" top="10.0" />
@@ -40,7 +40,7 @@
                         <Insets right="10.0" />
                      </padding>
                      <font>
-                        <Font name="System Bold Italic" size="14.0" />
+                        <Font name="System Bold Italic" size="18.0" />
                      </font>
                      <VBox.margin>
                         <Insets bottom="10.0" />
@@ -51,7 +51,7 @@
                         <Insets right="10.0" />
                      </padding>
                      <font>
-                        <Font name="System Bold Italic" size="14.0" />
+                        <Font name="System Bold Italic" size="18.0" />
                      </font>
                      <VBox.margin>
                         <Insets bottom="10.0" />
@@ -62,7 +62,7 @@
                         <Insets right="10.0" />
                      </padding>
                      <font>
-                        <Font name="System Bold Italic" size="14.0" />
+                        <Font name="System Bold Italic" size="18.0" />
                      </font>
                   </Label>
                   <Button fx:id="volver" mnemonicParsing="false" onAction="#volverAtras" prefHeight="53.0" prefWidth="173.0" text="Volver" textFill="#f20f0f">
@@ -75,10 +75,11 @@
                   </Button>
                </children>
             </VBox>
-            <VBox prefHeight="600.0" prefWidth="490.0" style="-fx-background-color: #C6F2F7;">
+            <VBox prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #C6F2F7;">
                <children>
                   <HBox prefHeight="63.0" prefWidth="487.0">
                      <children>
+                        <Region layoutX="196.0" layoutY="10.0" prefHeight="63.0" prefWidth="72.0" />
                         <Label alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="186.0" text="Código Detalle">
                            <HBox.margin>
                               <Insets top="20.0" />
@@ -87,15 +88,15 @@
                               <Insets right="10.0" />
                            </padding>
                            <font>
-                              <Font name="System Bold Italic" size="14.0" />
+                              <Font name="System Bold Italic" size="18.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="codigoDetalle" prefHeight="25.0" prefWidth="148.0">
+                        <Region prefHeight="63.0" prefWidth="20.0" />
+                        <TextField fx:id="codigoDetalle" prefHeight="26.0" prefWidth="176.0">
                            <HBox.margin>
                               <Insets left="10.0" top="20.0" />
                            </HBox.margin>
                         </TextField>
-                        <Region prefHeight="63.0" prefWidth="83.0" />
                      </children>
                      <VBox.margin>
                         <Insets bottom="20.0" />
@@ -103,7 +104,8 @@
                   </HBox>
                   <HBox layoutX="10.0" layoutY="10.0" prefHeight="63.0" prefWidth="487.0">
                      <children>
-                        <Label alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="183.0" text="Código Detalle Enlace">
+                        <Region prefHeight="63.0" prefWidth="72.0" />
+                        <Label alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="196.0" text="Código Detalle Enlace">
                            <HBox.margin>
                               <Insets top="20.0" />
                            </HBox.margin>
@@ -111,16 +113,16 @@
                               <Insets right="10.0" />
                            </padding>
                            <font>
-                              <Font name="System Bold Italic" size="14.0" />
+                              <Font name="System Bold Italic" size="18.0" />
                            </font>
                         </Label>
                         <Region prefHeight="63.0" prefWidth="8.0" />
+                        <Region prefHeight="63.0" prefWidth="17.0" />
                         <TextField fx:id="codigoDetalleEnlace" prefHeight="25.0" prefWidth="159.0">
                            <HBox.margin>
                               <Insets top="20.0" />
                            </HBox.margin>
                         </TextField>
-                        <Region prefHeight="63.0" prefWidth="23.0" />
                      </children>
                      <VBox.margin>
                         <Insets bottom="20.0" />
@@ -128,6 +130,7 @@
                   </HBox>
                   <HBox layoutX="10.0" layoutY="73.0" prefHeight="63.0" prefWidth="487.0">
                      <children>
+                        <Region layoutX="170.0" layoutY="10.0" prefHeight="63.0" prefWidth="106.0" />
                         <Label alignment="TOP_RIGHT" prefHeight="28.0" prefWidth="160.0" text="Modulo">
                            <HBox.margin>
                               <Insets top="20.0" />
@@ -136,7 +139,7 @@
                               <Insets right="10.0" />
                            </padding>
                            <font>
-                              <Font name="System Bold Italic" size="14.0" />
+                              <Font name="System Bold Italic" size="18.0" />
                            </font>
                         </Label>
                         <Region prefHeight="63.0" prefWidth="25.0" />
@@ -152,6 +155,7 @@
                   </HBox>
                   <HBox layoutX="10.0" layoutY="136.0" prefHeight="63.0" prefWidth="487.0">
                      <children>
+                        <Region layoutX="164.0" layoutY="10.0" prefHeight="63.0" prefWidth="109.0" />
                         <Label alignment="TOP_RIGHT" prefHeight="28.0" prefWidth="154.0" text="Evaluación">
                            <HBox.margin>
                               <Insets top="20.0" />
@@ -160,7 +164,7 @@
                               <Insets right="10.0" />
                            </padding>
                            <font>
-                              <Font name="System Bold Italic" size="14.0" />
+                              <Font name="System Bold Italic" size="18.0" />
                            </font>
                         </Label>
                         <Region prefHeight="63.0" prefWidth="29.0" />
@@ -176,6 +180,7 @@
                   </HBox>
                   <HBox layoutX="10.0" layoutY="199.0" prefHeight="63.0" prefWidth="487.0">
                      <children>
+                        <Region layoutX="168.0" layoutY="10.0" prefHeight="63.0" prefWidth="114.0" />
                         <Label alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="157.0" text="Nota" textAlignment="CENTER">
                            <HBox.margin>
                               <Insets top="20.0" />
@@ -184,7 +189,7 @@
                               <Insets right="10.0" />
                            </padding>
                            <font>
-                              <Font name="System Bold Italic" size="14.0" />
+                              <Font name="System Bold Italic" size="18.0" />
                            </font>
                         </Label>
                         <Region prefHeight="63.0" prefWidth="24.0" />
@@ -204,16 +209,24 @@
                            <font>
                               <Font size="18.0" />
                            </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
                         </Button>
+                        <Region prefHeight="63.0" prefWidth="54.0" />
                         <Button fx:id="insertarDatos" mnemonicParsing="false" onAction="#insercionDatos" prefHeight="53.0" prefWidth="173.0" text="Insertar Datos" textFill="#f20f0f">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Button>
+                        <Region prefHeight="63.0" prefWidth="66.0" />
                         <Button fx:id="actualizarDatos" layoutX="183.0" layoutY="10.0" mnemonicParsing="false" onAction="#actualizacionDatos" prefHeight="53.0" prefWidth="173.0" text="Actualizar Datos" textFill="#f20f0f">
                            <font>
                               <Font size="18.0" />
                            </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
                         </Button>
                      </children>
                      <VBox.margin>
@@ -243,6 +256,6 @@
             </VBox>
          </children>
       </HBox>
-      <TableView fx:id="dataGridView1" layoutY="600.0" prefHeight="198.0" prefWidth="704.0" />
+      <TableView fx:id="dataGridView1" layoutY="600.0" prefHeight="198.0" prefWidth="704.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
    </children>
 </AnchorPane>

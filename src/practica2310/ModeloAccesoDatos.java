@@ -16,10 +16,18 @@ public class ModeloAccesoDatos {
         String basededatos = "educacion";
         String usuario = "root";
         String password = "";
+  //  String usuario="alumnojcps";
+  //  String password="alumno1#";
+    
+    
+    
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + basededatos, usuario, password
-         );         }catch (Exception e) {
+           conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + basededatos, usuario, password
+   //         conexion = DriverManager.getConnection("jdbc:mysql://db4free.net:3306/" + basededatos, usuario, password
+   
+   
+   );         }catch (Exception e) {
             e.printStackTrace();
         }
         return conexion;

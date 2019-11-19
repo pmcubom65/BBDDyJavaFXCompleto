@@ -346,7 +346,7 @@ public class VentanaDeDetallesController implements Initializable {
         } catch (Exception e) {
 
         }
-        Scene nuevaescena = new Scene(nuevoparent, 700, 800);
+        Scene nuevaescena = new Scene(nuevoparent, 800, 800);
 
         //        VentanaDeDetallesController micontrolador = loader.getController();
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();

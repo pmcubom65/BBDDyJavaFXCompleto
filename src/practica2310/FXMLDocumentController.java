@@ -64,6 +64,8 @@ public class FXMLDocumentController implements Initializable {
 
     
  
+    @FXML
+    private Button imprimirAlumnos;
     
     
     @FXML
@@ -95,6 +97,23 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private Button detalle;
+    
+        @FXML
+    private Button notasinforme;
+    
+    
+    @FXML
+    void irANotas(ActionEvent event) {
+        ImprimirNotas inn=new ImprimirNotas();
+        inn.mostrarInforme();
+    }
+    
+    @FXML
+    public void mostrarInforme(ActionEvent event) {
+        ImprimirInforme ii=new ImprimirInforme();
+        ii.mostrarInforme();
+    }
+    
 
     @FXML
     void irVentanaDetalle(ActionEvent event) {
@@ -109,7 +128,7 @@ public class FXMLDocumentController implements Initializable {
             } catch (Exception e) {
 
             }
-            Scene nuevaescena = new Scene(nuevoparent, 700, 800);
+            Scene nuevaescena = new Scene(nuevoparent, 800, 800);
 
             VentanaDeDetallesController micontrolador = loader.getController();
 
